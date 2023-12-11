@@ -32,6 +32,10 @@
       text-align: center;
       margin-top: 20px;
   }
+  .image{
+    height: 15px;
+    width: 15px;
+  }
   .new-contact-btn {
       margin-bottom: 20px;
       display: block;
@@ -88,10 +92,10 @@ tr:nth-child(odd) {
       <tr>
         <td>
           <a class="btn btn-info btn-sm margin" href="{% url 'task_detail' task.pk %}" >
-            <span class="action-icons edit-icon" title="Edit">&#9998;</span>
+            <img class="image" src= "https://cdn3.iconfinder.com/data/icons/feather-5/24/edit-512.png"/>
           </a>
           <a class="icon-link margin" href="{% url 'task_confirm_list' task.pk %}">
-                <span class="action-icons bin-icon" title="Delete">&#128465;</span>
+            <img class="image" src= "https://uxwing.com/wp-content/themes/uxwing/download/checkmark-cross/cross-symbol-icon.png"/>
           </a>
           {{ task.name }}
         </td>
