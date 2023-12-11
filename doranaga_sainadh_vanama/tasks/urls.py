@@ -1,4 +1,4 @@
-# contacts/urls.py
+# tasks/urls.py
 
 from django.urls import path
 
